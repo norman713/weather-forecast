@@ -76,3 +76,16 @@ function findMedian(arr) {
 
 console.log("Median High Temperature:", findMedian(highTemperatures));
 console.log("Median Low Temperature:", findMedian(lowTemperatures));
+
+//----- 3. Weather Object
+
+let weather = {
+  temperature: 86,
+  conditions: "sunny",
+};
+
+console.log("Current temp:", weather.temperature);
+
+let report = `It's ${weather.temperature} degrees F and ${weather.conditions}.`;
+
+console.log(report);

@@ -89,3 +89,26 @@ console.log("Current temp:", weather.temperature);
 let report = `It's ${weather.temperature} degrees F and ${weather.conditions}.`;
 
 console.log(report);
+
+//----- CHALLENGE 1
+var todaysWeather = {
+  temperature: {
+    high: 55,
+    low: 32,
+  },
+  conditions: "sunny",
+  astronomy: {
+    sunrise: "7:43 AM",
+    sunset: "5:09 PM",
+  },
+};
+
+console.log("High:", todaysWeather.temperature.high);
+console.log("Low:", todaysWeather.temperature.low);
+console.log("Conditions:", todaysWeather.conditions);
+console.log("Sunrise:", todaysWeather.astronomy.sunrise);
+
+// Create a complete report using the data in the object
+let report1 = `Today is ${todaysWeather.conditions}. The high is ${todaysWeather.temperature.high} F degrees and the low is ${todaysWeather.temperature.low} F degrees. The sun rose at ${todaysWeather.astronomy.sunrise} and will set at ${todaysWeather.astronomy.sunset}.`;
+
+console.log(report1);

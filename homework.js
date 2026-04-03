@@ -112,3 +112,66 @@ console.log("Sunrise:", todaysWeather.astronomy.sunrise);
 let report1 = `Today is ${todaysWeather.conditions}. The high is ${todaysWeather.temperature.high} F degrees and the low is ${todaysWeather.temperature.low} F degrees. The sun rose at ${todaysWeather.astronomy.sunrise} and will set at ${todaysWeather.astronomy.sunset}.`;
 
 console.log(report1);
+
+//----- CHALLENGE 2
+
+var weatherForecast = [
+  {
+    day: "Today",
+    temperature: {
+      high: 55,
+      low: 32,
+    },
+    conditions: "sunny",
+    astronomy: {
+      sunrise: "7:43 AM",
+      sunset: "5:09 PM",
+    },
+  },
+  {
+    day: "Saturday",
+    temperature: {
+      high: 50,
+      low: 29,
+    },
+    conditions: "cloudy",
+    astronomy: {
+      sunrise: "7:44 AM",
+      sunset: "5:08 PM",
+    },
+  },
+  {
+    day: "Sunday",
+    temperature: {
+      high: 47,
+      low: 35,
+    },
+    conditions: "chance of rain",
+    astronomy: {
+      sunrise: "7:45 AM",
+      sunset: "5:07 PM",
+    },
+  },
+];
+
+// 1. Today's conditions
+console.log(weatherForecast[0].conditions);
+
+// 2. Saturday high
+console.log(weatherForecast[1].temperature.high);
+
+// 3. Saturday sunrise
+console.log(weatherForecast[1].astronomy.sunrise);
+
+// 4. Sunday conditions
+console.log(weatherForecast[2].conditions);
+
+// 5. Sunday sunset
+console.log(weatherForecast[2].astronomy.sunset);
+
+// 6. Sentence for Sunday
+let sunday = weatherForecast[2];
+
+let report2 = `The high on ${sunday.day} will be ${sunday.temperature.high} and the low will be ${sunday.temperature.low}. We're predicting ${sunday.conditions}. The sun will rise at ${sunday.astronomy.sunrise} and set at ${sunday.astronomy.sunset}.`;
+
+console.log(report2);
